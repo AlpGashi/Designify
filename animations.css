@@ -1,0 +1,171 @@
+/* animations.css */
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* nav.css */
+
+/* Style for the links */
+.navelements a {
+    position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    color: white; /* Default color of the text */
+    padding-bottom: 5px; /* Add padding to create space for the underline */
+    transition: color 0.3s; /* Smooth transition for text color change */
+}
+
+/* Pseudo-element for the underline */
+.navelements a::after {
+    content: ''; /* Required to display the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    transform: scaleX(0); /* Start with zero width */
+    transform-origin: bottom right; /* Set origin for scaling animation */
+    transition: transform 0.3s; /* Smooth transition for the scale effect */
+}
+
+/* Hover effect to show the underline */
+.navelements a:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+    transform-origin: bottom left; /* Change origin to the left for smooth effect */
+}
+
+/* Optional: Change text color on hover */
+.navelements a:hover {
+    color: #f0f0f0; /* Example hover color, adjust as needed */
+}
+/* ===================== */
+/* Default styles for buttons */
+.buttons-w1 button {
+    /* Font size */
+    cursor: pointer; /* Cursor on hover */
+    transition: all 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Specific styles for the download-cv button */
+.download-cv {
+    background-color: #101010; /* Dark background color */
+    border: 1px solid white; /* White border color by default */
+}
+
+.download-cv a {
+    color: white; /* White text color */
+}
+
+/* Specific styles for the hire-me button */
+.hire-me {
+    background-color: white; /* White background color */
+    border-color: #101010; /* Dark border color by default */
+}
+
+.hire-me a {
+    color: #101010; /* Dark text color */
+}
+
+/* Hover styles */
+.download-cv:hover {
+    background-color: white; /* Change background to white on hover */
+    border-color: #101010; /* Change border color to dark on hover */
+}
+
+.download-cv:hover a {
+    color: #101010; /* Change text color to dark on hover */
+}
+
+.hire-me:hover {
+    background-color: #101010; /* Change background to dark color on hover */
+    border-color: white; /* Change border color to white on hover */
+}
+
+.hire-me:hover a {
+    color: white; /* Change text color to white on hover */
+}
+.animation{
+    transition: 0.3s ease-in-out;
+}
+.animation:hover{
+    cursor: pointer;;
+    background-color: #101010;
+    border: 1px solid white;
+   
+}
+.animation a:hover{
+    color: white;
+}
+/* =================================== */
+
+.ulfooter {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.ulfooter li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 20px; /* Adjust spacing between list items as needed */
+}
+
+.ulfooter li a {
+    position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    color: white; /* Default color of the text */
+    padding-bottom: 5px; /* Add padding to create space for the underline */
+    transition: color 0.3s; /* Smooth transition for text color change */
+}
+
+/* Pseudo-element for the underline */
+.ulfooter li a::after {
+    content: ''; /* Required to display the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    transform: scaleX(0); /* Start with zero width */
+    transform-origin: bottom right; /* Set origin for scaling animation */
+    transition: transform 0.3s; /* Smooth transition for the scale effect */
+}
+
+/* Hover effect to show the underline */
+.ulfooter li a:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+    transform-origin: bottom left; /* Change origin to the left for smooth effect */
+}
+
+/* Optional: Change text color on hover */
+.ulfooter li a:hover {
+    color: #f0f0f0; /* Example hover color, adjust as needed */
+}
+.amf{
+    display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.amf:hover {
+    transform: rotate(-90deg);
+  }
+  .butonsend {
+    background-color: #292D33;
+    border: 1px solid #FF9500;
+    border-radius: 32px;
+    color: white;
+    padding: 13px 16px;
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out; /* Add this line */
+  }
+.butonsend:hover {
+    background-color: #FF9500;
+    color: #1A1D23;
+    border: 1px solid #292D33; /* Optional: change border color on hover */
+  }

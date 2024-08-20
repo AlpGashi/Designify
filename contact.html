@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire me | Contact </title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="c5-contact.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+        <nav>
+            <h1>Designify</h1>
+        </nav>
+        <div class="wrapper">
+        <div class="left">
+            <div class="topleft-contact">
+                <h1 class="c1">CONTACT US</h1>
+                <p class="p1">Complete This form to contact <span>us</span>. </p>
+            </div>
+            
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <p class="name1">Name</p>
+                <input class="name" type="text" name="Name" placeholder="Enter your name" required>
+                <p class="email1">Email</p>
+                <input class="email" type="email" name="email" placeholder="Enter your email" required>
+                <p class="phone1">Phone</p>
+                <input class="phone" type="tel" name="phone" placeholder="Enter your phone number">
+                <p class="besttime1">Best Time to Contact You</p>
+                <input class="best-time" type="text" name="best_time" placeholder="Enter best time to contact you">
+                <p class="message1">How Can we help you?</p>
+                <div class="emailbot">
+                    <textarea class="message" name="Message" placeholder="Your message here" required></textarea>
+                  </div>
+                <input type="hidden" name="_subject" value="New Mail!">
+                <input type="hidden" name="access_key" value="a83cfd49-015e-4d82-9e26-ee134b407852">
+                <input type="hidden" name="_autoresponse" value="We'll reply to you shortly">
+                
+                <div class="h-captcha" data-captcha="true"></div>
+                
+                <div class="emailbut">
+                    <button class="butonsend" type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+      
+        <div class="right">
+            <!-- <section class="s5" id="section5">
+                
+                <div class="box-s5">
+                    <div class="info-box-s5">
+                      <div class="topleft-s5 clickable" data-text="alpgashi2008@gmail.com">
+                        <img src="Images/email.jpg" alt="">
+                        <p>alpgashi2008@gmail.com</p>
+                      </div>
+                      <div class="botright-s5 clickable" data-text="+383 45 266 006">
+                        <img src="Images/phone.jpg" alt="">
+                        <p>+383 45 266 006</p>
+                      </div>
+                    </div>
+                  </div>
+                <footer>
+                    <ul>
+                        <li><a href="home.html#section1" class="animation-footer amf">Home</a></li>
+                        <li><a href="home.html#section2" class="animation-footer amf">Let's Work Together</a></li>
+                        <li><a href="home.html#section3" class="animation-footer amf">About Me</a></li>
+                        <li><a href="home.html#section4" class="animation-footer amf">Projects</a></li>
+                        <li><a href="home.html#section5" class="animation-footer amf">Contact</a></li>
+                      </ul>
+                      
+                </footer>
+            
+              </section> -->
+        </div>
+       
+        
+    </div>
+   
+</body>
+<script>
+   window.addEventListener('load', () => {
+  const hash = window.location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+});
+document.querySelectorAll('.info-box-s5').forEach(element => {
+  element.addEventListener('click', function() {
+    const text = this.querySelector('.copy-text').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const message = this.getAttribute('data-copy');
+      const copyMessageElem = document.querySelector('.copy-message');
+      copyMessageElem.textContent = message;
+      copyMessageElem.style.display = 'block';
+      setTimeout(() => {
+        copyMessageElem.style.display = 'none';
+      }, 2000); // Message disappears after 2 seconds
+    });
+  });
+});
+const copyElements = document.querySelectorAll('.clickable');
+
+copyElements.forEach(element => {
+  element.addEventListener('click', function() {
+    const textToCopy = this.dataset.text;
+
+    // Modern Clipboard API (preferred)
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+          console.log('Copied to clipboard!'); // Success message (optional)
+        })
+        .catch(err => {
+          console.error('Failed to copy:', err);  // Handle potential errors gracefully
+        });
+    } else {
+      // Fallback for older browsers (less reliable)
+      const textArea = document.createElement('textarea');
+      textArea.value = textToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();   
+
+      try {
+        document.execCommand('copy');
+        console.log('Copied   to clipboard!'); // Success message (optional)
+      } catch (err) {
+        console.error('Failed to copy:', err);  // Handle potential errors gracefully
+      }
+      document.body.removeChild(textArea);
+    }
+  });
+
+  element.addEventListener('mouseover', function() {
+    this.style.cursor = 'pointer';
+  });
+
+  element.addEventListener('mouseout', function() {
+    this.style.cursor = 'default';
+  });
+});
+
+  </script>
+</html>

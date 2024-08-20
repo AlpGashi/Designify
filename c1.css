@@ -1,0 +1,224 @@
+.bottoms1 p{
+    font-family: bitter;
+    color: white;
+}
+.bottoms1 h4{
+    font-family: poppins;
+    color: #d1d1d1;
+    font-weight: 500;
+}
+
+.logosw1 img{
+    width: 32px;
+    height: 32px;
+}
+
+.buttons-w1{
+    display: flex;
+    gap: 20px;
+}
+.wrapper1{
+    margin-top: 80px;
+    gap: 16px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.download-cv,.hire-me{
+    border:1px white solid ;
+    font-family: poppins;
+}
+.download-cv a{
+color: white;
+font-family: poppins;
+font-weight: 500;
+}
+.hire-me a{
+    color: black;
+ 
+}
+
+a{
+    text-decoration: none;
+    
+}
+.download-cv,.hire-me{
+border-radius: 32px;
+}
+.logosw1{
+    display: flex;
+    gap: 16px;
+}
+@media screen and (max-width:500px) {
+    .heroimg{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width:500px) and (max-width:768px) {
+    .heroimg{
+        width: 260px;
+        height: 260px;
+    }
+}
+@media screen and (max-width:768px){
+    .bottoms1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .wrapper1{
+        flex-direction: column;
+    }
+    .heroimg{
+        border-radius: 100%;
+        
+    }
+    .topw1{
+        margin-top: 12px;
+    }
+    .topw1 p{
+        font-size: 38px;
+        font-family: bitter;
+        width: 249px;
+        word-wrap: break-word;
+        white-space: normal;
+        line-height: 46px;
+    }
+    .topw1 h4{
+        font-size: 20px;
+        line-height: 30px;
+        font-family: poppins;
+        color: #d1d1d1;
+        margin-top: 16px;
+    }
+    .download-cv{
+    
+       padding: 13px 10px;
+       background-color: #020015;
+      
+    }
+    .hire-me{
+        padding: 13px 31px;
+        background-color: #ffffff;
+     }
+}
+@media screen and (min-width:768px) and (max-width:1440px){
+    .bottoms1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .wrapper1{
+        gap: 10%;
+    }
+    .heroimg{
+        border-radius: 100%;
+        width: 275px;
+        height: 275px;
+    }
+    .topw1{
+        margin-top: 20px;
+    }
+    .topw1 p{
+        font-size: 48px;
+        font-family: bitter;
+        width: 271px;
+        word-wrap: break-word;
+        white-space: normal;
+        line-height: 58px;
+    }
+    .topw1 h4{
+        font-size: 28px;
+        line-height: 30px;
+        font-family: poppins;
+        color: #d1d1d1;
+        margin-top: 21px;
+    }
+    .download-cv{
+        
+       padding: 13px 22px;
+       background-color: #020015;
+      
+    }
+    .hire-me{
+        
+        padding: 13px 42px;
+        background-color: #ffffff;
+     }
+     .buttons-w1{
+        margin-top: 21px;
+     }
+}
+@media screen and (min-width:1440px) {
+.wrapper1{
+    display: flex;
+    gap: 208px;
+
+}
+.heroimgdiv{
+    order: 2;
+}
+.botw1{
+    order: 1;
+}
+.heroimg{
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+.topw1 p{
+    font-size: 80px;
+    font-family: bitter;
+    width: 451px;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 96px;
+    text-align: left;
+}
+.topw1 h4{
+    font-size: 40px;
+    line-height: 30px;
+    font-family: poppins;
+    color: #d1d1d1;
+    margin-top: 21px;
+    text-align: left;
+}
+.download-cv{
+
+   padding: 13px 22px;
+   background-color: #020015;
+  
+}
+.download-cv a, .hire-me a{
+    font-size: 16px;
+}
+.hire-me{
+    padding: 13px 42px;
+    background-color: #ffffff;
+ }
+ .buttons-w1{
+    margin-top: 40px;
+    align-items: flex-start;
+ }
+ .logosw1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-right: 124px;
+ }
+ .name{
+    font-size: 32px;
+ }
+
+}
+.navbarul{
+    padding: 20px;
+ }

@@ -1,0 +1,269 @@
+
+body {
+    background-color: #1A1D23;
+}
+input,textarea{
+    color: white;
+}
+nav h1{
+    padding: 20px;
+    color: white;
+    font-family: bitter;
+    font-weight: 400;
+}
+span{
+    color: #FF9500;
+}
+@media screen and (max-width:768px) {
+    .c1{
+        font-family: bitter;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .p1{
+        font-family: inter;
+        font-size: 13px;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        text-align: left;
+    }
+  
+    .name1,.email1,.phone1,.besttime1,.message1{
+        font-size: 13px;
+        font-weight: 400;
+        color: #FFCD9E;
+        font-family: inter;
+    }
+    .name,.email,.phone,.best-time{
+        width: 268px;
+        background-color: #292D33;
+        border-bottom: #32353B;
+        border-right: none;
+        height: 32px;
+    }
+    .message{
+        width: 268px;
+        height: 68px;
+        background-color: #292D33;
+        border: none;
+        border-right: none;
+    }
+    .butonsend{
+        background-color: #292D33;
+        border: 1px solid #FF9500;
+        border-radius: 32px;
+        color: white;
+        padding: 13px 16px;
+        margin-top: 16px;
+    }
+
+  
+}
+.infoTop-s3{
+    display: none;
+}
+@media screen and (min-width:768px) {
+    .c1{
+        font-family: bitter;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .p1{
+        font-family: inter;
+        font-size: 13px;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        text-align: left;
+    }
+    .topleft-contact{
+        margin-right: 67px;
+    }
+    .name1,.email1,.phone1,.besttime1,.message1{
+        font-size: 13px;
+        font-weight: 400;
+        color: #FFCD9E;
+        font-family: inter;
+    }
+    .name,.email,.phone,.best-time{
+        background-color: #292D33;
+        border-bottom: #32353B;
+        border-right: none;
+        height: 32px;
+    }
+    .message{
+       
+        height: 68px;
+        background-color: #292D33;
+        border: none;
+        border-right: none;
+    }
+    .butonsend{
+        background-color: #292D33;
+        border: 1px solid #FF9500;
+        border-radius: 32px;
+        color: white;
+        padding: 13px 0;
+        width: 268px;
+        margin-top: 16px;
+    }
+.left{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+margin: 0;
+padding: 0;
+}
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+        
+    }
+}
+/* @media screen and (max-width:1440px) {
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+@media screen and (min-width:1132px) {
+    .name,.email,.phone,.best-time,.message{
+        width: 1000px;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1132px) {
+    .name,.email,.phone,.best-time,.message{
+   width: 850px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    .name,.email,.phone,.best-time,.message{
+        width: 700px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    form {
+      width: 100%;
+    }
+    .left{
+      width: 70%;
+      flex-basis: 70%; 
+    }
+  } */
+   .wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+  form {
+    width: 100%;
+  }
+  .left{
+    width: 70%;
+    flex-basis: 70%; /* Set the initial size */
+  }
+  .name,.email,.phone,.best-time,.message,.emailbot{
+    width: 100%;
+    
+}
+@media screen and (max-width:1000px){
+    .name,.email,.phone,.best-time,.message{
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+}
+@media screen and (min-width:1000px){
+    .name,.email,.phone,.best-time,.message{
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+}
+
+.emailbut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+@media screen and (min-width:1000px) and (max-width:2000px) {
+    .name,.email,.phone,.best-time{
+      height: 50px;
+        
+    }
+    .c1{
+        font-size: 20px;
+    }
+    .p1,.name1,.phone1,.email1,.message1{
+        font-size: 16px;
+    }
+    .name,.email,.phone,.message{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:2000px) and (max-width:2560px) {
+    .name,.email,.phone,.best-time{
+      height: 100px;
+      font-size: 32px;
+      
+        
+    }
+    .message{
+        font-size: 32px;
+        height: 400px;
+    }
+    .name1,.email1,.phone1,.besttime1,.message1{
+        font-size: 36px;
+        
+    }
+    nav h1{
+        font-size: 72px;
+    }
+    .c1{
+        font-size:49px ;
+    }
+    .p1{
+        font-size: 32px;
+    }
+}
+/* 
+@media screen and (min-width:1000px) and (max-width:1440px) {
+    
+   
+    .name1,.email1,.phone1,.besttime1,.message1{
+        font-size: 26px;
+        
+        
+    }
+    nav h1{
+      
+    }
+    .c1{
+        
+    }
+    .p1{
+      
+    }
+} */
